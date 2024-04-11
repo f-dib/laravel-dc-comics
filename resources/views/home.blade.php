@@ -2,5 +2,7 @@
 
 
 @section('content')
-    contenuto della pagina
+    @foreach($comics as $comicItem)
+        {{ $comicItem['title'] }}<br>
+    @endforeach
 @endsection
