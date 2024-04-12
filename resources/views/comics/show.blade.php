@@ -12,9 +12,22 @@
         </div>
     </div>
     <div class="my_description">
-        <div class="container-lg d-flex gap-3">
-            <div>
-                <h1>{{ $comic->title }}</h1>
+        <div class="container-lg d-flex gap-3 justify-content-between">
+            <div class="w-100">
+                <h1 class="mb-3">{{ $comic->title }}</h1>
+                <div class="my_availability d-flex mb-3">
+                    <div class="text-white w-75 my_border_av p-3 d-flex justify-content-between">
+                        <div>
+                            U.S. Price: {{ $comic->price }}
+                        </div>
+                        <div class="text-uppercase">
+                            available
+                        </div>
+                    </div>
+                    <div class="text-white p-3 text-center w-25">
+                        Check Availability
+                    </div>
+                </div>
                 <p>{{ $comic->description }}</p>
             </div>
             <div>

@@ -19,6 +19,14 @@
 
 }
 
+.my_availability{
+    background-color: green;
+
+    .my_border_av{
+        border-right: 1px solid rgb(54, 177, 54);
+    }
+}
+
 .my_description{
     padding: 60px 0px 70px;
 }
