@@ -2,10 +2,10 @@
 
 
 @section('content')
-    <div class="container-xl">
-        <h1>Aggiungi Comic</h1>
+    <div class="container-xl py-4">
+        <h1 class="text-center">Aggiungi Comic</h1>
 
-        <form action="/comic/store" method="POST">
+        <form action="{{route('comics.store')}}" method="POST">
             @csrf
 
             <div class="mb-3">

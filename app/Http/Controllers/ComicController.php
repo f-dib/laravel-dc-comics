@@ -19,7 +19,7 @@ class ComicController extends Controller
         $footerlink2 = config("dbcomics.site.footerlink2");
         $social = config("dbcomics.site.social");
 
-        return view('comic.index', compact('comics', 'links', 'buy', 'footerlink1', 'footerlink2', 'social'));
+        return view('comics.index', compact('comics', 'links', 'buy', 'footerlink1', 'footerlink2', 'social'));
     }
 
     /**
@@ -32,7 +32,7 @@ class ComicController extends Controller
         $footerlink2 = config("dbcomics.site.footerlink2");
         $social = config("dbcomics.site.social");
 
-        return view('comic.create', compact('links', 'footerlink1', 'footerlink2', 'social'));
+        return view('comics.create', compact('links', 'footerlink1', 'footerlink2', 'social'));
     }
 
     /**
@@ -55,7 +55,7 @@ class ComicController extends Controller
 
         $newComic->save();
 
-        return redirect()->route('comic.index');
+        return redirect()->route('comics.index');
 
     }
 
@@ -69,7 +69,7 @@ class ComicController extends Controller
         $footerlink2 = config("dbcomics.site.footerlink2");
         $social = config("dbcomics.site.social");
 
-        return view('comic.show', compact('comic', 'links', 'footerlink1', 'footerlink2', 'social'));
+        return view('comics.show', compact('comic', 'links', 'footerlink1', 'footerlink2', 'social'));
     }
 
     /**

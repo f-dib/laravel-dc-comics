@@ -8,7 +8,7 @@
                 <div class="mini_alert text-white">current series</div>
                 <div class="d-flex flex-wrap">
                     @foreach($comics as $comicItem)
-                    <a href="/comics/5">
+                    <a href="#">
                         <div class="comic">
                             <div class="comics_size">
                                 <img class="my_poster" src="{{ $comicItem['thumb'] }}" alt="{{ $comicItem['title'] }}">
