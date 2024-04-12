@@ -8,16 +8,21 @@
                 <div class="mini_alert text-white">current series</div>
                 <div class="d-flex flex-wrap">
                     @foreach($comics as $comicItem)
+                    <a href="/comics/5">
                         <div class="comic">
                             <div class="comics_size">
                                 <img class="my_poster" src="{{ $comicItem['thumb'] }}" alt="{{ $comicItem['title'] }}">
                             </div>
-                            <h4 class="text-white">{{ $comicItem['series'] }}</h4>
+                            <div>
+                                <h4 class="text-white text-nowrap">{{ $comicItem['series'] }}</h4>
+                            </div>
                         </div>
+                    </a>
                     @endforeach
                 </div>
             </div>
             <div><button class="load_more">load more</button></div>
+            <div><a href="/comics/create">Aggiungi Comic</a></div>
         </div>
     </main>
 

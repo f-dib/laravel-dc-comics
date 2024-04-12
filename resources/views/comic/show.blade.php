@@ -32,7 +32,7 @@
                     <div class="py-3 my_bb">
                         <h4>Talent</h4>
                     </div>
-                    <div class="py-1 my_bb">
+                    <div class="py-1 my_bb d-flex flex-wrap">
                         testo
                     </div>
                     <div class="py-1 my_bb">
