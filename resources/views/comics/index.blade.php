@@ -21,8 +21,7 @@
                     @endforeach
                 </div>
             </div>
-            <div><button class="load_more">load more</button></div>
-            <div><a href="/comics/create">Aggiungi Comic</a></div>
+            <div><a href="/comics/create"><button class="load_more">Aggiungi Comic</button></a></div>
         </div>
     </main>
 
