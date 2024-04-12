@@ -1,0 +1,32 @@
+header{
+    .my_bg{
+        background-color: $primary;
+
+        div ul{
+            list-style-type: none;
+        }
+    }
+
+    .my_nav {
+        background-color: white;
+        color: black;
+
+        .my_width2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .active{
+                color: $primary;
+                border-bottom: 5px solid $primary;
+            }
+
+            .my_list2{
+                font-weight: bold;
+                padding: 50px 15px;
+                list-style-type: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

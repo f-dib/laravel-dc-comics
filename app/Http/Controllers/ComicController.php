@@ -13,8 +13,13 @@ class ComicController extends Controller
     public function index()
     {
         $comics = Comic::all();
+        $links = config("dbcomics.site.links");
+        $buy = config("dbcomics.site.buy");
+        $footerlink1 = config("dbcomics.site.footerlink1");
+        $footerlink2 = config("dbcomics.site.footerlink2");
+        $social = config("dbcomics.site.social");
 
-        return view('home', compact('comics'));
+        return view('comic.index', compact('comics', 'links', 'buy', 'footerlink1', 'footerlink2', 'social'));
     }
 
     /**
@@ -36,9 +41,14 @@ class ComicController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Comic $comic)
     {
-        //
+        $links = config("dbcomics.site.links");
+        $footerlink1 = config("dbcomics.site.footerlink1");
+        $footerlink2 = config("dbcomics.site.footerlink2");
+        $social = config("dbcomics.site.social");
+
+        return view('comic.show', compact('comic', 'links', 'footerlink1', 'footerlink2', 'social'));
     }
 
     /**
