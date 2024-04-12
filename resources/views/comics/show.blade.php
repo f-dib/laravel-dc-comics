@@ -53,19 +53,42 @@
                             {{ $comic->artists }}
                         </div>
                     </div>
-                    <div class="py-1 my_bb">
-                        testo
+                    <div class="py-1 my_bb d-flex">
+                        <div class="w-25">
+                            Written by:
+                        </div>
+                        <div class="w-75 text-primary">
+                            {{ $comic->writers }}
+                        </div>
                     </div>
                 </div>
                 <div class="w-50">
                     <div class="py-3 my_bb">
                         <h4>Specs</h4>
                     </div>
-                    <div class="py-1 my_bb">
-                        testo
+                    <div class="py-1 my_bb d-flex">
+                        <div class="w-25">
+                            Series:
+                        </div>
+                        <div class="w-75 text-primary">
+                            {{ $comic->series }}
+                        </div>
                     </div>
-                    <div class="py-1 my_bb">
-                        testo
+                    <div class="py-1 my_bb d-flex">
+                        <div class="w-25">
+                            U.S. Price:
+                        </div>
+                        <div class="w-75 text-primary">
+                            {{ $comic->price }}
+                        </div>
+                    </div>
+                    <div class="py-1 my_bb d-flex">
+                        <div class="w-25">
+                            On Sale Date:
+                        </div>
+                        <div class="w-75 text-primary">
+                            {{ $comic->sale_date }}
+                        </div>
                     </div>
                 </div>
             </div>

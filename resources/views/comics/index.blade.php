@@ -6,18 +6,18 @@
         <div class="container-xl d-flex flex-column justify-content-center align-items-center">
             <div class="buy_area">
                 <div class="mini_alert text-white">current series</div>
-                <div class="d-flex flex-wrap">
+                <div class="row">
                     @foreach($comics as $comic)
-                    <a href="{{route('comics.show', $comic->id)}}">
-                        <div class="comic">
-                            <div class="comics_size">
-                                <img class="my_poster" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                            </div>
-                            <div>
-                                <h4 class="text-white text-nowrap">{{ $comic['series'] }}</h4>
-                            </div>
+                        <div class="comic col-1 col-md-3 col-lg-2">
+                            <a href="{{route('comics.show', $comic->id)}}">
+                                <div class="comics_size">
+                                    <img class="my_poster" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                                </div>
+                                <div>
+                                    <h4 class="text-white text-nowrap">{{ $comic['title'] }}</h4>
+                                </div>
+                            </a>
                         </div>
-                    </a>
                     @endforeach
                 </div>
             </div>

@@ -9,8 +9,8 @@
             @csrf
 
             <div class="mb-3">
-            <label for="title" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="title" name="title" required>
+                <label for="title" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="title" name="title" required>
             </div>
 
             <div class="mb-3">
