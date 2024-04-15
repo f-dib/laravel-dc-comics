@@ -10,7 +10,7 @@
 
             <div class="mb-3">
                 <label for="title" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="title" name="title" required>
+                <input type="text" class="form-control" id="title" name="title">
             </div>
 
             <div class="mb-3">
@@ -52,6 +52,16 @@
                 <label for="writers" class="form-label">Scrittore</label>
                 <input type="text" class="form-control" id="writers" name="writers">
             </div>
+
+            @if($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
 
 
             <button type="submit" class="btn btn-primary">Salva</button>
