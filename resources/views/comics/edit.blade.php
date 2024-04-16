@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container py-5">
-    <h1 class="mb-4">Modifica la pasta</h1>
+    <h1 class="mb-4 text-center">Modifica il Comic</h1>
 
     <form action="{{route('comics.update', $comic->id)}}" method="POST">
         @csrf

@@ -29,8 +29,8 @@ class StoreComicRequest extends FormRequest
             'series' => 'required | max:255',
             'sale_date' => 'required | max:10',
             'type' => 'required | max:100',
-            'artists' => 'required | max:100',
-            'writers' => 'required | max:100',
+            'artists' => 'required | max:500',
+            'writers' => 'required | max:500',
         ];
     }
 
